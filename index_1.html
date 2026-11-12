@@ -7,12 +7,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-<<<<<<< HEAD
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#9a5418" />
-=======
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
   <title>HAYOKI — Modern Household Goods</title>
   <meta name="description" content="Durable, timeless household essentials for kitchen, living, bed & bath and storage." />
 
@@ -38,7 +34,6 @@
   </script>
 
   <style>
-<<<<<<< HEAD
     html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
     button { touch-action: manipulation; }
     @media (max-width: 767px) {
@@ -49,9 +44,6 @@
       #cartOpenBtn { background: rgba(255,255,255,.18) !important; }
       #toast { bottom: calc(76px + env(safe-area-inset-bottom)) !important; }
     }
-=======
-    html { scroll-behavior: smooth; }
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
     body { font-family: 'Inter', sans-serif; }
     .font-serif { font-variation-settings: 'opsz' 96; }
     .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -66,15 +58,9 @@
 <body id="top" class="bg-sand-50 text-ink antialiased min-h-screen flex flex-col overflow-x-hidden">
 
   <!-- Header -->
-<<<<<<< HEAD
   <header id="siteHeader" class="sticky top-0 z-40 bg-sand-50/85 backdrop-blur-lg border-b border-sand-200 pt-[env(safe-area-inset-top)]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-14 md:h-[72px] gap-4">
-=======
-  <header class="sticky top-0 z-40 bg-sand-50/85 backdrop-blur-lg border-b border-sand-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-[72px] gap-4">
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
         <a href="#top" onclick="resetFilters()" class="flex items-center gap-2.5 shrink-0" aria-label="HAYOKI home">
           <span id="brandLogo" class="h-9 min-w-[2.25rem] flex items-center justify-center"></span>
           <span id="brandName" class="font-serif text-xl font-semibold tracking-tight">HAYOKI</span>
@@ -89,11 +75,7 @@
         </div>
 
         <div class="flex items-center gap-1.5">
-<<<<<<< HEAD
           <button id="wishToggle" onclick="toggleWishlistView()" class="relative max-md:hidden p-2.5 rounded-full hover:bg-sand-100 transition" aria-label="Saved items">
-=======
-          <button id="wishToggle" onclick="toggleWishlistView()" class="relative p-2.5 rounded-full hover:bg-sand-100 transition" aria-label="Saved items">
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
             <i data-lucide="heart" class="w-5 h-5"></i>
             <span id="wishBadge" class="hidden absolute top-1 right-0.5 min-w-[16px] h-4 px-1 bg-rose-600 text-white text-[10px] font-bold rounded-full items-center justify-center">0</span>
           </button>
@@ -107,23 +89,14 @@
       <div class="pb-3 md:hidden relative">
         <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-4 top-1/2 -translate-y-[60%]"></i>
         <input id="mobileSearchInput" type="search" placeholder="Search products…" aria-label="Search products"
-<<<<<<< HEAD
           class="w-full pl-11 pr-4 py-2.5 bg-white rounded-lg text-sm shadow-sm focus:outline-none" />
-=======
-          class="w-full pl-11 pr-4 py-2.5 bg-sand-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-clay-600" />
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
       </div>
     </div>
   </header>
 
   <!-- Shop -->
-<<<<<<< HEAD
   <main id="shop" class="flex-1 max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-2 md:py-8 w-full scroll-mt-20">
     <nav aria-label="Breadcrumb" class="hidden md:block text-xs text-stone-500 mb-6">
-=======
-  <main id="shop" class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full scroll-mt-20">
-    <nav aria-label="Breadcrumb" class="text-xs text-stone-500 mb-6">
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
       <a href="#top" onclick="resetFilters()" class="hover:text-ink">Home</a><span class="mx-2">/</span><span id="crumb" class="text-ink font-medium">Shop all</span>
     </nav>
 
@@ -145,7 +118,6 @@
       </aside>
 
       <section>
-<<<<<<< HEAD
         <div id="categoryTabs" class="lg:hidden flex items-start gap-1 overflow-x-auto no-scrollbar bg-white rounded-lg border border-sand-200 px-2 py-3 mb-2" role="tablist"></div>
         <div id="promoBanner" class="hidden rounded-lg bg-gradient-to-r from-clay-600 to-amber-500 text-white px-4 py-4 mb-3 items-center justify-between">
           <div><p class="text-xs opacity-90">Mega savings on home essentials</p><p id="promoText" class="text-xl font-bold"></p></div>
@@ -157,14 +129,6 @@
             <p id="resultCount" class="text-sm text-stone-500 mt-1"></p>
           </div>
           <div class="flex items-center gap-2 max-lg:hidden">
-=======
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-5 mb-6 border-b border-sand-200">
-          <div>
-            <h3 id="shopTitle" class="font-serif text-3xl font-medium tracking-tight">Shop all</h3>
-            <p id="resultCount" class="text-sm text-stone-500 mt-1"></p>
-          </div>
-          <div class="flex items-center gap-2">
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
             <label for="sortSelect" class="text-sm text-stone-500">Sort by</label>
             <div class="relative">
               <select id="sortSelect" class="appearance-none bg-white border border-sand-300 rounded-full pl-4 pr-10 py-2.5 text-sm font-medium focus:outline-none focus:border-clay-600">
@@ -178,7 +142,6 @@
           </div>
         </div>
 
-<<<<<<< HEAD
         
 
         <div class="lg:hidden grid grid-cols-2 bg-white border border-sand-200 rounded-lg mb-3 text-sm font-semibold divide-x divide-sand-200">
@@ -187,19 +150,6 @@
         </div>
 
         <div id="productGrid" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-5"></div>
-=======
-        <div id="categoryTabs" class="lg:hidden flex items-center gap-2 overflow-x-auto no-scrollbar pb-4 mb-4" role="tablist"></div>
-
-        <details class="lg:hidden mb-6 bg-white border border-sand-200 rounded-2xl px-4 py-3">
-          <summary class="text-sm font-semibold cursor-pointer">Filter by price</summary>
-          <div class="pt-3">
-            <input id="priceRangeM" type="range" min="0" step="50" class="w-full accent-[#9a5418]" aria-label="Maximum price" />
-            <div class="flex justify-between text-xs text-stone-500 mt-2"><span>₹0</span><span>Up to <strong id="priceLabelM" class="text-ink"></strong></span></div>
-          </div>
-        </details>
-
-        <div id="productGrid" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10"></div>
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
 
         <div id="noResults" class="hidden text-center py-24">
           <i data-lucide="search-x" class="w-12 h-12 text-stone-300 mx-auto mb-4"></i>
@@ -248,11 +198,7 @@
 
       <div id="cartItemList" class="flex-1 overflow-y-auto px-6 py-2"></div>
 
-<<<<<<< HEAD
       <div class="px-6 py-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] border-t border-sand-200 bg-white space-y-4">
-=======
-      <div class="px-6 py-5 border-t border-sand-200 bg-white space-y-4">
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
         <dl class="space-y-2 text-sm text-stone-600">
           <div class="flex justify-between"><dt>Subtotal</dt><dd id="cartSubtotal" class="font-medium text-ink">₹0</dd></div>
           <div class="flex justify-between pt-3 border-t border-sand-200 text-base font-semibold text-ink"><dt>Total</dt><dd id="cartTotal">₹0</dd></div>
@@ -266,7 +212,6 @@
 
   <!-- Quick view (product gallery + details + reviews) -->
   <div id="quickModal" class="hidden fixed inset-0 z-50 items-end sm:items-center justify-center sm:p-6 bg-ink/60 backdrop-blur-sm">
-<<<<<<< HEAD
     <div class="relative bg-white w-full max-w-5xl h-full max-h-none sm:h-auto sm:max-h-[90vh] rounded-none sm:rounded-[1.75rem] shadow-2xl flex flex-col overflow-hidden" role="dialog" aria-label="Product details">
       <button onclick="closeQuick()" class="absolute top-3 left-3 sm:left-auto sm:right-3 z-20 p-2 rounded-full bg-white shadow border border-sand-200 hover:bg-sand-100" aria-label="Close"><i data-lucide="arrow-left" class="w-4 h-4 sm:hidden"></i><i data-lucide="x" class="w-4 h-4 hidden sm:block"></i></button>
       <div class="overflow-y-auto overscroll-contain">
@@ -277,17 +222,6 @@
         <div id="quickReviews" class="border-t border-sand-200 px-5 sm:px-8 py-8 bg-sand-50"></div>
       </div>
       <div id="quickBar" class="sm:hidden flex gap-2 p-2.5 border-t border-sand-200 bg-white pb-[max(0.625rem,env(safe-area-inset-bottom))]"></div>
-=======
-    <div class="relative bg-white w-full max-w-5xl max-h-[94vh] sm:max-h-[90vh] rounded-t-[1.75rem] sm:rounded-[1.75rem] shadow-2xl flex flex-col overflow-hidden" role="dialog" aria-label="Product details">
-      <button onclick="closeQuick()" class="absolute top-3 right-3 z-20 p-2 rounded-full bg-white shadow border border-sand-200 hover:bg-sand-100" aria-label="Close"><i data-lucide="x" class="w-4 h-4"></i></button>
-      <div class="overflow-y-auto overscroll-contain">
-        <div class="grid md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-6 md:gap-10 p-5 sm:p-8">
-          <div id="quickImage" class="min-w-0 md:sticky md:top-0 self-start"></div>
-          <div id="quickBody" class="min-w-0 flex flex-col pt-1 md:pt-4 md:pr-8"></div>
-        </div>
-        <div id="quickReviews" class="border-t border-sand-200 px-5 sm:px-8 py-8 bg-sand-50"></div>
-      </div>
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
     </div>
   </div>
 
@@ -301,13 +235,8 @@
   </div>
 
   <!-- Checkout -->
-<<<<<<< HEAD
   <div id="checkoutModal" class="hidden fixed inset-0 z-50 items-center justify-center p-0 sm:p-4 bg-ink/60 backdrop-blur-sm overflow-y-auto">
     <div class="bg-white rounded-none sm:rounded-[1.75rem] max-w-3xl w-full min-h-full sm:min-h-0 shadow-2xl relative sm:my-auto" role="dialog" aria-label="Checkout">
-=======
-  <div id="checkoutModal" class="hidden fixed inset-0 z-50 items-center justify-center p-4 bg-ink/60 backdrop-blur-sm overflow-y-auto">
-    <div class="bg-white rounded-[1.75rem] max-w-3xl w-full shadow-2xl relative my-auto" role="dialog" aria-label="Checkout">
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
       <button id="closeCheckoutBtn" class="absolute top-5 right-5 p-2 rounded-full hover:bg-sand-100 z-10" aria-label="Close checkout"><i data-lucide="x" class="w-5 h-5"></i></button>
 
       <div id="checkoutFormWrapper" class="grid md:grid-cols-5">
@@ -366,7 +295,6 @@
     </div>
   </div>
 
-<<<<<<< HEAD
   <nav id="bottomNav" class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-sand-200 grid grid-cols-4 pb-[env(safe-area-inset-bottom)]" aria-label="Main">
     <button onclick="resetFilters(); scrollTo({top:0,behavior:'smooth'})" class="flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium text-stone-600"><i data-lucide="home" class="w-5 h-5"></i>Home</button>
     <button onclick="$('categoryTabs').scrollIntoView({behavior:'smooth',block:'center'})" class="flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium text-stone-600"><i data-lucide="layout-grid" class="w-5 h-5"></i>Categories</button>
@@ -394,8 +322,6 @@
     </div>
   </div>
 
-=======
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
   <!-- Toast -->
   <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[80] bg-ink text-white px-5 py-3 rounded-full shadow-xl flex items-center gap-2.5 transition-all duration-300 translate-y-24 opacity-0" role="status" aria-live="polite">
     <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
@@ -884,15 +810,9 @@
     function renderTabs() {
       $('categoryTabs').innerHTML = categories.map(c => {
         const active = !wishlistOnly && currentCategory === c.key;
-<<<<<<< HEAD
         return `<button role="tab" aria-selected="${active}" onclick="setCategory('${c.key}')" class="flex flex-col items-center gap-1.5 w-[72px] shrink-0">
           <span class="w-14 h-14 rounded-full flex items-center justify-center ${active ? 'bg-clay-600 text-white' : 'bg-sand-100 text-clay-700'}"><i data-lucide="${c.icon}" class="w-6 h-6"></i></span>
           <span class="text-[11px] leading-tight text-center w-full truncate ${active ? 'font-semibold text-ink' : 'text-stone-600'}">${c.label}</span></button>`;
-=======
-        return `<button role="tab" aria-selected="${active}" onclick="setCategory('${c.key}')"
-          class="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition border ${active ? 'bg-ink text-white border-ink' : 'bg-white text-stone-600 border-sand-300 hover:border-stone-500'}">
-          <i data-lucide="${c.icon}" class="w-4 h-4"></i>${c.label}</button>`;
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
       }).join('');
       $('sideCats').innerHTML = categories.map(c => {
         const active = !wishlistOnly && currentCategory === c.key;
@@ -958,7 +878,6 @@
       }
 
       $('productGrid').innerHTML = list.map((p, i) => {
-<<<<<<< HEAD
         const saved = wishlist.includes(p.id), r = ratingInfo(p), sold = soldText(p.id);
         return `
         <article class="fade-up flex flex-col bg-white border border-sand-200 rounded-lg overflow-hidden" style="animation-delay:${i * 30}ms">
@@ -975,38 +894,6 @@
             <div class="mt-1">${priceHTML(p)}</div>
             ${sold ? `<p class="mt-0.5 text-[11px] font-medium text-clay-700">${sold}</p>` : ''}
             <button onclick="event.stopPropagation(); addToCart(${p.id})" class="mt-auto pt-0 mt-2 w-full py-2 rounded-md border border-clay-600 text-clay-700 text-xs font-semibold active:bg-clay-600 active:text-white">Add to cart</button>
-=======
-        const saved = wishlist.includes(p.id);
-        return `
-        <article class="group flex flex-col fade-up" style="animation-delay:${i * 40}ms">
-          <div class="relative rounded-[1.5rem] overflow-hidden">
-            <button onclick="openQuick(${p.id})" class="block w-full aspect-[4/5]" aria-label="View ${esc(p.title)}">
-              ${imageBlock(p, 'w-full h-full group-hover:scale-[1.04] transition-transform duration-700')}
-            </button>
-            <span class="absolute top-3 left-3 bg-white/90 backdrop-blur text-[11px] font-semibold px-3 py-1 rounded-full">${esc(catLabel(p.category))}</span>
-            ${p.discount > 0 ? `<span class="absolute bottom-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-full">${p.discount}% OFF</span>` : ''}
-            <button onclick="toggleWish(${p.id})" class="${saved ? 'heart-on' : ''} absolute top-3 right-3 p-2 bg-white/90 backdrop-blur rounded-full hover:scale-110 transition" aria-label="${saved ? 'Remove from' : 'Add to'} saved items" aria-pressed="${saved}">
-              <i data-lucide="heart" class="w-4 h-4"></i>
-            </button>
-          </div>
-          <div class="pt-4 px-1">
-            <h4 class="font-medium leading-snug text-sm sm:text-base">${esc(p.title)}</h4>
-            <div class="mt-1.5">${priceHTML(p)}</div>
-            <div class="mt-1.5 text-xs text-stone-500">
-              <div class="flex items-center gap-1">
-                ${starsHTML(ratingInfo(p).avg, 'w-3.5 h-3.5')}
-                <span class="font-semibold text-stone-700">${ratingInfo(p).avg.toFixed(1)}</span>
-              </div>
-              <div class="mt-0.5 flex flex-wrap items-center gap-x-1.5">
-                ${ratingInfo(p).count ? `<span>${ratingInfo(p).count.toLocaleString('en-IN')} review${ratingInfo(p).count > 1 ? 's' : ''}</span>` : ''}
-                ${ratingInfo(p).count && soldText(p.id) ? '<span class="text-stone-300">•</span>' : ''}
-                ${soldText(p.id) ? `<span class="font-medium text-clay-700">${soldText(p.id)}</span>` : ''}
-              </div>
-            </div>
-            <button onclick="addToCart(${p.id})" class="mt-4 w-full flex items-center justify-center gap-2 py-2.5 border border-ink rounded-full text-sm font-semibold hover:bg-ink hover:text-white transition">
-              <i data-lucide="shopping-bag" class="w-4 h-4"></i> Add to cart
-            </button>
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
           </div>
         </article>`;
       }).join('');
@@ -1038,10 +925,7 @@
     function updateWishBadge() {
       const b = $('wishBadge');
       b.textContent = wishlist.length;
-<<<<<<< HEAD
       $('navWishBadge').textContent = wishlist.length; $('navWishBadge').classList.toggle('hidden', !wishlist.length); $('navWishBadge').classList.toggle('flex', wishlist.length > 0);
-=======
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
       b.classList.toggle('hidden', wishlist.length === 0);
       b.classList.toggle('flex', wishlist.length > 0);
       $('wishToggle').classList.toggle('bg-sand-100', wishlistOnly);
@@ -1060,24 +944,15 @@
 
     function galleryShell(p) {
       return `
-<<<<<<< HEAD
         <div class="relative" ontouchstart="swS(event)" ontouchend="swE(event)">
           <div class="img-wrap relative aspect-square sm:rounded-2xl overflow-hidden bg-gradient-to-br ${catStyle[p.category]} flex items-center justify-center cursor-zoom-in" onclick="openGalleryLB()">
-=======
-        <div class="relative">
-          <div class="img-wrap relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br ${catStyle[p.category]} flex items-center justify-center cursor-zoom-in" onclick="openGalleryLB()">
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
             <i data-lucide="${catIcon[p.category]}" class="w-12 h-12 text-white/70"></i>
             <img id="galImg" src="${esc(p.images[0])}" alt="${esc(p.title)}" class="absolute inset-0 w-full h-full object-cover" />
           </div>
           <button id="galPrev" onclick="setGal(galIdx - 1)" class="hidden absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 hover:bg-white shadow text-2xl leading-none items-center justify-center" aria-label="Previous photo">‹</button>
           <button id="galNext" onclick="setGal(galIdx + 1)" class="hidden absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 hover:bg-white shadow text-2xl leading-none items-center justify-center" aria-label="Next photo">›</button>
         </div>
-<<<<<<< HEAD
         <div id="galThumbs" class="flex gap-2 mt-3 overflow-x-auto no-scrollbar pb-1 px-3 sm:px-0"></div>
-=======
-        <div id="galThumbs" class="flex gap-2 mt-3 overflow-x-auto no-scrollbar pb-1"></div>
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
         <p id="galCount" class="text-xs text-stone-500 mt-1"></p>`;
     }
 
@@ -1135,16 +1010,10 @@
             <span id="quickQty" class="w-8 text-center text-sm font-semibold">${quickQty}</span>
             <button onclick="quickChange(1)" class="w-10 h-11 hover:bg-sand-100 rounded-r-full" aria-label="Increase quantity">+</button>
           </div>
-<<<<<<< HEAD
           <button onclick="addToCart(${p.id}, quickQty); closeQuick()" class="max-sm:hidden flex-1 min-w-[140px] bg-ink text-white py-3 rounded-full text-sm font-semibold hover:bg-clay-700 transition">Add to cart</button>
           <button onclick="toggleWish(${p.id})" class="${saved ? 'heart-on' : ''} p-3 border border-sand-300 rounded-full hover:bg-sand-100" aria-label="Save item"><i data-lucide="heart" class="w-4 h-4"></i></button>
         </div>`;
       $('quickBar').innerHTML = `<button onclick="addToCart(${p.id}, quickQty); closeQuick()" class="flex-1 py-3.5 rounded-md border border-clay-600 text-clay-700 text-sm font-bold">Add to cart</button><button onclick="addToCart(${p.id}, quickQty); closeQuick(); openCheckout()" class="flex-1 py-3.5 rounded-md bg-clay-600 text-white text-sm font-bold">Buy now</button>`;
-=======
-          <button onclick="addToCart(${p.id}, quickQty); closeQuick()" class="flex-1 min-w-[140px] bg-ink text-white py-3 rounded-full text-sm font-semibold hover:bg-clay-700 transition">Add to cart</button>
-          <button onclick="toggleWish(${p.id})" class="${saved ? 'heart-on' : ''} p-3 border border-sand-300 rounded-full hover:bg-sand-100" aria-label="Save item"><i data-lucide="heart" class="w-4 h-4"></i></button>
-        </div>`;
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
       pendingRating = 0; pendingPhotos = []; reviewLimit = REVIEWS_PER_PAGE;
       $('quickReviews').innerHTML = reviewsHTML(p);
       renderPhotoPreview();
@@ -1475,10 +1344,7 @@
       store.set('hh_cart', cart);
       const count = cart.reduce((a, i) => a + i.quantity, 0);
       $('cartCountBadge').textContent = count;
-<<<<<<< HEAD
       $('navCartBadge').textContent = count; $('navCartBadge').classList.toggle('hidden', !count);
-=======
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
 
       const list = $('cartItemList'), btn = $('openCheckoutBtn');
       if (cart.length === 0) {
@@ -1622,7 +1488,6 @@
         if (e.key === 'ArrowRight') setGal(galIdx + 1);
       }
       if (e.key !== 'Escape') return;
-<<<<<<< HEAD
       closeCart(); closeQuick(); closeCheckout(); closeSheet();
     });
 
@@ -1642,12 +1507,6 @@
     // ---------- Init ----------
     const maxOff = Math.max(...products.map(p => p.discount));
     if (maxOff > 0) { $('promoText').textContent = `Up to ${maxOff}% off`; $('promoBanner').classList.remove('hidden'); $('promoBanner').classList.add('flex'); }
-=======
-      closeCart(); closeQuick(); closeCheckout();
-    });
-
-    // ---------- Init ----------
->>>>>>> a992e5e3c6821272500ae33dc7c8e30603660b0f
     $('year').textContent = new Date().getFullYear();
     applyBranding();
     renderTopNav();
